@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class UserloginActivity extends AppCompatActivity {
+public class Sign_up extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_userlogin);
+        setContentView(R.layout.activity_sign_up);
     }
 }

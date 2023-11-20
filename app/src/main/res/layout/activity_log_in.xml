@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context=".login">
+    tools:context=".LogIn">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -53,7 +52,7 @@
         android:layout_marginTop="12dp"
         android:ems="15"
         android:inputType="text"
-      android:hint="Passwrod"
+        android:hint="Passwrod"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.363"
         app:layout_constraintStart_toStartOf="parent"
@@ -107,6 +106,5 @@
         app:layout_constraintHorizontal_bias="0.884"
         app:layout_constraintStart_toStartOf="@+id/imageView9"
         tools:layout_editor_absoluteY="602dp" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
