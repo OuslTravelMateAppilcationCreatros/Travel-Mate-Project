@@ -21,23 +21,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/pic_removebg_preview" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="163dp"
         android:layout_height="59dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="34dp"
         android:backgroundTint="#63AB8D"
         android:text="LOG IN"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="433dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="163dp"
         android:layout_height="59dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="146dp"
         android:backgroundTint="#63AB8D"
         android:text="SIGN IN"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="526dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

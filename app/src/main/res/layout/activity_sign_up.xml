@@ -27,13 +27,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="133dp"
         android:ems="10"
         android:inputType="text"
         android:text="First Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="86dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/editTextText4"
@@ -78,10 +79,13 @@
         android:id="@+id/editTextText7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="133dp"
         android:ems="10"
         android:inputType="text"
         android:text="Password"
-        tools:layout_editor_absoluteX="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="384dp" />
 
     <EditText
