@@ -20,7 +20,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/_2"
+                android:id="@+id/_xx"
                 android:layout_width="match_parent"
                 android:layout_height="450dp"
                 android:scaleType="fitXY"

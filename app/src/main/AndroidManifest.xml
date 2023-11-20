@@ -13,6 +13,27 @@
         android:theme="@style/Theme.TRAVELMate"
         tools:targetApi="31">
         <activity
+            android:name=".View_holder"
+            android:exported="false" />
+        <activity
+            android:name=".Fogot_Password"
+            android:exported="false" />
+        <activity
+            android:name=".Province_"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Sign_up"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn"
+            android:exported="false" />
+        <activity
+            android:name=".Choose_user_or_Guide"
+            android:exported="false" />
+        <activity
             android:name=".test"
             android:exported="false" />
         <activity
@@ -23,9 +44,6 @@
             android:exported="false" />
         <activity
             android:name=".ProvinceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Home"
             android:exported="false" />
         <activity
             android:name=".ForgotPasswordActivity"

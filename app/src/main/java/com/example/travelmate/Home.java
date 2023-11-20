@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.travelmate.R;
-
 public class Home extends AppCompatActivity {
 
     @Override
