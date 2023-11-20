@@ -31,9 +31,11 @@
                         android:id="@+id/imageView6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/profile"
-                        tools:layout_editor_absoluteX="1dp"
-                        tools:layout_editor_absoluteY="1dp" />
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/profile" />
 
                     <TextView
                         android:id="@+id/textView7"
@@ -87,50 +89,55 @@
                         app:layout_constraintTop_toBottomOf="@+id/textView8"
                         app:layout_constraintVertical_bias="0.056" />
 
-                    <LinearLayout
+                    <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginBottom="8dp"
-                        android:orientation="horizontal"
-                        tools:layout_editor_absoluteX="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         tools:layout_editor_absoluteY="147dp">
 
-                        <EditText
-                            android:id="@+id/editTextText17"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/search_bar_background"
-                            android:drawableStart="@drawable/search_icon"
-                            android:drawablePadding="16dp"
-                            android:ems="10"
-                            android:hint="Search Location...."
-                            android:inputType="text"
-                            android:maxEms="10"
-                            android:padding="16dp"
-                            android:textColor="@color/black"
-                            android:textColorHint="@color/black"
-                            android:textSize="16sp" />
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginStart="16dp"
-                            android:background="@drawable/setting_background">
+                            <EditText
+                                android:id="@+id/editTextText17"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/search_bar_background"
+                                android:drawableStart="@drawable/search_icon"
+                                android:drawablePadding="16dp"
+                                android:ems="10"
+                                android:hint="Search Location...."
+                                android:inputType="text"
+                                android:maxEms="10"
+                                android:padding="16dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="16sp" />
 
-                            <ImageView
-                                android:id="@+id/imageView10"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/settings" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="16dp"
+                                android:background="@drawable/setting_background">
 
-                    </LinearLayout>
+                                <ImageView
+                                    android:id="@+id/imageView10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/settings" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -165,7 +172,7 @@
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/View-pop"
+                android:id="@+id/popular"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
@@ -309,7 +316,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView6"
+                        android:id="@+id/imageView60"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
