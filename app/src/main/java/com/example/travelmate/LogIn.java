@@ -62,7 +62,7 @@ public class LogIn extends AppCompatActivity {
 
         String val = Email.getText().toString();
         if (val.isEmpty()) {
-            Email.setError("S number cannot be empty");
+            Email.setError("Email number cannot be empty");
             return false;
         } else {
             Email.setError(null);
@@ -99,7 +99,7 @@ public class LogIn extends AppCompatActivity {
 
                 if (snapshot.exists()) {
                     Email.setError(null);
-                    String passwordFromDB = snapshot.child(userEmail).child("s_num").getValue(String.class);
+                    String passwordFromDB = snapshot.child(userEmail).child("email").getValue(String.class);
 
                     if (!Objects.equals(passwordFromDB, userPassword)) {
                         Email.setError(null);
@@ -111,7 +111,7 @@ public class LogIn extends AppCompatActivity {
                         Password.requestFocus();
                     }
                 } else {
-                    Email.setError("S number does not exist");
+                    Email.setError("Email number does not exist");
                     Email.requestFocus();
                     //If user entered password is incorrect, its showing error message.
                 }
