@@ -6,29 +6,30 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
-public class Choose_user_or_Guide extends AppCompatActivity {
-     Button User;
-     Button Guide;
+public class GuideLogIn extends AppCompatActivity {
+    TextView SignUp;
+    Button GoHome;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choose_user_or_guide);
+        setContentView(R.layout.activity_guide_log_in);
 
-        User=findViewById(R.id.button5);
-        User.setOnClickListener(new View.OnClickListener() {
+        SignUp=findViewById(R.id.SignUp);
+        SignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Choose_user_or_Guide.this, LogIn.class);
+                Intent intent = new Intent(GuideLogIn.this,GuideRegistration.class);
                 startActivity(intent);
             }
         });
 
-        Guide=findViewById(R.id.button3);
-        Guide.setOnClickListener(new View.OnClickListener() {
+        GoHome=findViewById(R.id.button5);
+        GoHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Choose_user_or_Guide.this, GuideLogIn.class);
+                Intent intent = new Intent(GuideLogIn.this,Home.class);
                 startActivity(intent);
             }
         });

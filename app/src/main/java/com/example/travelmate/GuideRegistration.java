@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class Sign_up extends AppCompatActivity {
+public class GuideRegistration extends AppCompatActivity {
     Button Register;
     TextView LogIn;
 
@@ -23,7 +23,7 @@ public class Sign_up extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.activity_guide_registration);
 
         Register=findViewById(R.id.Register);
         LogIn=findViewById(R.id.LogIn);
@@ -31,11 +31,10 @@ public class Sign_up extends AppCompatActivity {
         LogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Sign_up.this,LogIn.class);
+                Intent intent = new Intent(GuideRegistration.this,GuideLogIn.class);
                 startActivity(intent);
             }
         });
-
 
         Name = findViewById(R.id.editTextText13);
         Email = findViewById(R.id.editTextText14);
@@ -45,11 +44,11 @@ public class Sign_up extends AppCompatActivity {
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =  new Intent(Sign_up.this,LogIn.class);
+                Intent intent =  new Intent(GuideRegistration.this,GuideLogIn.class);
                 startActivity(intent);
 
                 rootNode = FirebaseDatabase.getInstance();
-                reference = rootNode.getReference("Users");
+                reference = rootNode.getReference("Guide");
 
                 String name = Name.getText().toString();
                 String email = Email.getText().toString();
@@ -61,5 +60,7 @@ public class Sign_up extends AppCompatActivity {
                 reference.child(email).setValue(helperClass);
             }
         });
+
+
     }
 }
