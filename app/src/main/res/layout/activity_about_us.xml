@@ -4,26 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< Updated upstream
-    android:background="#03FCB4 "
-    tools:context=".AboutUsActivity">
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="187dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="100dp"
-        android:text="ABOUT US"
-        android:textColor="@color/black"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-=======
     tools:context=".AboutUsActivity">
 
     <ImageView
@@ -90,8 +70,7 @@
         android:text="Welcome to Travel Mate, your ultimate companion for seamless and memorable journeys! At Travel Mate, we understand that travel is not just about reaching a destination; it's about the experiences, the connections, and the moments that make the journey unforgettable."
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.168"
-        tools:layout_editor_absoluteX="0dp" />
->>>>>>> Stashed changes
+        app:layout_constraintVertical_bias="0.168" />
 </androidx.constraintlayout.widget.ConstraintLayout>
