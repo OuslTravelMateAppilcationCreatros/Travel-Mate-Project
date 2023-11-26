@@ -40,7 +40,7 @@
     <Button
 
         android:id="@+id/button5"
-        android:layout_width="138dp"
+        android:layout_width="250dp"
         android:layout_height="55dp"
         android:backgroundTint="#63AB8D"
         android:text="User"
@@ -55,7 +55,7 @@
     <Button
 
         android:id="@+id/button3"
-        android:layout_width="138dp"
+        android:layout_width="250dp"
         android:layout_height="55dp"
         android:backgroundTint="#63AB8D"
         android:text="Guide"
@@ -84,6 +84,8 @@
         android:layout_width="164dp"
         android:layout_height="134dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:srcCompat="@drawable/photo_2023_08_07_08_47_29"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/photo_2023_08_07_08_47_29" />
 </androidx.constraintlayout.widget.ConstraintLayout>
