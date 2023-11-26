@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#17A589 "
+    tools:context=".CentralProvinceActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="399dp"
+        android:layout_height="424dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="380dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.696"
+        app:srcCompat="@drawable/queens_hotel_kandy" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="294dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="96dp"
+        android:text="C E N T R A L \n P R O V I N C E"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="176dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="189dp"
+        android:background="@color/white"
+        android:text="Temple of the tooth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="407dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="176dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="189dp"
+        android:background="@color/white"
+        android:text="Udawathta kele sanctuary "
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="176dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="189dp"
+        android:layout_marginBottom="96dp"
+        android:background="@color/white"
+        android:text="Hantana Mountain "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="176dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="189dp"
+        android:background="@color/white"
+        android:text="Bahirawakanda Temple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="176dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="189dp"
+        android:background="@color/white"
+        android:text="Royal Bottanical Garden"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="298dp"
+        android:layout_marginTop="282dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="23dp"
+        android:backgroundTint="#467C48"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
