@@ -13,6 +13,15 @@
         android:theme="@style/Theme.TRAVELMate"
         tools:targetApi="31">
         <activity
+            android:name=".Profile_log_in_Check_userName"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
             android:name=".Setting"
             android:exported="false" />
         <activity
