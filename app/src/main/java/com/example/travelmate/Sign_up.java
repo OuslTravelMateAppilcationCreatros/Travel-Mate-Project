@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -16,9 +17,9 @@ public class Sign_up extends AppCompatActivity {
     Button Register;
     TextView LogIn;
 
-    EditText Name, Email, Password, ConfirmPassword;
+    EditText Name, Email, Username, Password, ConfirmPassword;
 
-    FirebaseDatabase rootNode;
+    FirebaseDatabase database;
     DatabaseReference reference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,26 +40,30 @@ public class Sign_up extends AppCompatActivity {
 
         Name = findViewById(R.id.editTextText13);
         Email = findViewById(R.id.editTextText14);
+        Username =findViewById(R.id.username);
         Password = findViewById(R.id.editTextText3);
         ConfirmPassword = findViewById(R.id.editTextText2);
 
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =  new Intent(Sign_up.this,LogIn.class);
-                startActivity(intent);
 
-                rootNode = FirebaseDatabase.getInstance();
-                reference = rootNode.getReference("Users");
+                database = FirebaseDatabase.getInstance();
+                reference = database.getReference("users");
 
                 String name = Name.getText().toString();
                 String email = Email.getText().toString();
+                String username = Username.getText().toString();
                 String password = Password.getText().toString();
-                String confirmPassword = ConfirmPassword.getText().toString();
+                String confirmPassword =  ConfirmPassword.getText().toString();
 
 
-                UserHelperClass helperClass = new UserHelperClass(name,email, password,confirmPassword);
-                reference.child(email).setValue(helperClass);
+                UserHelperClass helperClass = new UserHelperClass(name, email, username, password,confirmPassword);
+                reference.child(username).setValue(helperClass);
+
+                Toast.makeText(Sign_up.this, "You have signup successfully!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Sign_up.this, LogIn.class);
+                startActivity(intent);
             }
         });
     }
