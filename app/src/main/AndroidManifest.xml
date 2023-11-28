@@ -13,6 +13,9 @@
         android:theme="@style/Theme.TRAVELMate"
         tools:targetApi="31">
         <activity
+            android:name=".BahirawakandaTempleActivity"
+            android:exported="false" />
+        <activity
             android:name=".UdawathtaForestaCTIVITY"
             android:exported="false" />
         <activity
