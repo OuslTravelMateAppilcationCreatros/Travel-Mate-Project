@@ -18,7 +18,8 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Home extends AppCompatActivity {
     ImageView Go;
-    TextView PF, Name;
+    TextView PF, SeeAll;
+    TextView Name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +28,18 @@ public class Home extends AppCompatActivity {
         Go=findViewById(R.id.Go);
         PF =findViewById(R.id.textVie1);
         Name =findViewById(R.id.Name);
+        SeeAll = findViewById(R.id.SeeAll);
+
+        showUserData();
+
+
+        SeeAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this,Category.class);
+                startActivity(intent);
+            }
+        });
 
 
         Go.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +55,8 @@ public class Home extends AppCompatActivity {
                 Intent intent = new Intent(Home.this,Profile_log_in_Check_userName.class);
                 startActivity(intent);
             }
+
+
         });
     }
 
@@ -65,7 +80,18 @@ public class Home extends AppCompatActivity {
                 if (snapshot.exists()) {
 
                     String nameFromDB = snapshot.child(userUsername).child("name").getValue(String.class);
+                    String emailFromDB = snapshot.child(userUsername).child("email").getValue(String.class);
+                    String usernameFromDB = snapshot.child(userUsername).child("username").getValue(String.class);
+                    String passwordFromDB = snapshot.child(userUsername).child("password").getValue(String.class);
 
+                    Intent intent = new Intent(Home.this, EditProfileActivity.class);
+
+                    intent.putExtra("name", nameFromDB);
+                    intent.putExtra("email", emailFromDB);
+                    intent.putExtra("username", usernameFromDB);
+                    intent.putExtra("password", passwordFromDB);
+
+                    startActivity(intent);
                 }
             }
 
@@ -75,6 +101,7 @@ public class Home extends AppCompatActivity {
             }
         });
     }
+
 
 
 
