@@ -176,6 +176,7 @@
 
             </LinearLayout>
 
+
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -234,7 +235,6 @@
                             android:orientation="vertical">
 
 
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -243,13 +243,12 @@
                                 android:textSize="20sp" />
 
                             <ImageView
+                                android:id="@+id/image6"
                                 android:layout_width="match_parent"
                                 android:layout_height="122dp"
-                                app:cardCornerRadius="20dp"
-                                android:id="@+id/image6"
                                 android:layout_marginTop="1dp"
                                 android:src="@drawable/galle"
-                                />
+                                app:cardCornerRadius="20dp" />
 
                         </LinearLayout>
 
@@ -277,13 +276,12 @@
                                 android:textSize="20sp" />
 
                             <ImageView
+                                android:id="@+id/image3"
                                 android:layout_width="match_parent"
                                 android:layout_height="122dp"
-                                app:cardCornerRadius="20dp"
-                                android:id="@+id/image3"
                                 android:layout_marginTop="1dp"
                                 android:src="@drawable/kandy"
-                                />
+                                app:cardCornerRadius="20dp" />
 
                         </LinearLayout>
 
@@ -311,17 +309,17 @@
                                 android:textSize="20sp" />
 
                             <ImageView
+                                android:id="@+id/image4"
                                 android:layout_width="match_parent"
                                 android:layout_height="122dp"
-                                app:cardCornerRadius="20dp"
-                                android:id="@+id/image4"
                                 android:layout_marginTop="1dp"
                                 android:src="@drawable/colombo"
-                                />
+                                app:cardCornerRadius="20dp" />
 
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
+
                     <androidx.cardview.widget.CardView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
@@ -334,7 +332,6 @@
                             android:layout_height="wrap_content"
                             android:gravity="center_horizontal"
                             android:orientation="vertical">
-
 
 
                             <TextView
@@ -345,17 +342,17 @@
                                 android:textSize="20sp" />
 
                             <ImageView
+                                android:id="@+id/image2"
                                 android:layout_width="match_parent"
                                 android:layout_height="122dp"
-                                app:cardCornerRadius="10dp"
-                                android:id="@+id/image2"
                                 android:layout_marginTop="1dp"
                                 android:src="@drawable/nuwaraeliya"
-                                />
+                                app:cardCornerRadius="10dp" />
 
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
+
                     <androidx.cardview.widget.CardView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
@@ -370,7 +367,6 @@
                             android:orientation="vertical">
 
 
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -379,13 +375,12 @@
                                 android:textSize="20sp" />
 
                             <ImageView
+                                android:id="@+id/image8"
                                 android:layout_width="match_parent"
                                 android:layout_height="122dp"
-                                app:cardCornerRadius="20dp"
-                                android:id="@+id/image8"
                                 android:layout_marginTop="1dp"
                                 android:src="@drawable/rawana"
-                                />
+                                app:cardCornerRadius="20dp" />
 
                         </LinearLayout>
 
@@ -394,8 +389,6 @@
                 </LinearLayout>
 
             </HorizontalScrollView>
-
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -415,7 +408,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/editTextText21"
+                    android:id="@+id/SeeAll"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="See all"
@@ -425,13 +418,227 @@
 
             </LinearLayout>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/view_cat"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:clipToPadding="false"
-                android:paddingStart="8dp"
-                android:paddingEnd="8dp" />
+                android:layout_height="170dp"
+                android:background="#EDFBFB"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/Places"
+                            android:layout_width="90dp"
+                            android:layout_height="104dp"
+                            app:srcCompat="@drawable/map4"
+                            />
+
+                        <TextView
+                            android:id="@+id/PlaceText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Places"
+                            android:textAlignment="center"
+                            android:textColor="#676767"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/Shedule"
+                            android:layout_width="90dp"
+                            android:layout_height="104dp"
+                            app:srcCompat="@drawable/shedulenew"
+                           />
+                            />
+
+                        <TextView
+                            android:id="@+id/SheduleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Shedule"
+                            android:textAlignment="center"
+                            android:textColor="#676767"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/province"
+                            android:layout_width="90dp"
+                            android:layout_height="104dp"
+                            app:srcCompat="@drawable/ceylon"
+                           />
+
+                        <TextView
+                            android:id="@+id/ProvinceText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Province"
+                            android:textAlignment="center"
+                            android:textColor="#676767"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/Hotel"
+                            android:layout_width="90dp"
+                            android:layout_height="104dp"
+                            app:srcCompat="@drawable/hotel"
+                           />
+
+                        <TextView
+                            android:id="@+id/HHHText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hotels"
+                            android:textAlignment="center"
+                            android:textColor="#676767"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="#EDFBFB"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/X1"
+                            android:layout_width="90dp"
+                            android:layout_height="104dp"
+                            app:srcCompat="@drawable/map4"
+                            />
+
+                        <TextView
+                            android:id="@+id/XT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Places"
+                            android:textAlignment="center"
+                            android:textColor="#676767"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/X2"
+                            android:layout_width="90dp"
+                            android:layout_height="104dp"
+                            app:srcCompat="@drawable/shedulenew"
+                            />
+                        />
+
+                        <TextView
+                            android:id="@+id/X2T"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Shedule"
+                            android:textAlignment="center"
+                            android:textColor="#676767"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/X3"
+                            android:layout_width="90dp"
+                            android:layout_height="104dp"
+                            app:srcCompat="@drawable/ceylon"
+                            />
+
+                        <TextView
+                            android:id="@+id/X3T"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Province"
+                            android:textAlignment="center"
+                            android:textColor="#676767"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/X4"
+                            android:layout_width="90dp"
+                            android:layout_height="104dp"
+                            app:srcCompat="@drawable/hotel"
+                            />
+
+                        <TextView
+                            android:id="@+id/X4T"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hotels"
+                            android:textAlignment="center"
+                            android:textColor="#676767"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
         </LinearLayout>
 
 
