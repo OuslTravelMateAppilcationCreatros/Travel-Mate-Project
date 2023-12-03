@@ -17,8 +17,8 @@ import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HireGuideAdapter extends RecyclerView.Adapter<HireGuideViewHolder> {
-  //Need to Change
+public class HireGuideAdapter extends RecyclerView.Adapter<HireGuideViewHolder> { //Need to Change
+
     private Context context;
     private List<HireGuideDataClass> dataList;//Change
 

@@ -10,7 +10,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.SearchView;
-import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
@@ -22,50 +21,50 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Places extends AppCompatActivity {
+public class Hotel extends AppCompatActivity {
 
     FloatingActionButton fab;
     DatabaseReference databaseReference;
     ValueEventListener eventListener;
     RecyclerView recyclerView;
 
-    List<PlaceDataClass> dataList;
-    PlaceAdapter adapter;
+    List<HotelDataClass> dataList;
+   HotelAdapter adapter;// Change
     SearchView searchView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_places);
+        setContentView(R.layout.activity_hotel);
 
-        recyclerView = findViewById(R.id.recyclerView);
-        fab = findViewById(R.id.fab);
+
+        recyclerView = findViewById(R.id.HotelrecyclerView);// Change
+        fab = findViewById(R.id.Hotel);// Change
         //  searchView = findViewById(R.id.search);
         //  searchView.clearFocus();
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(Places.this, 1);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(Hotel.this, 1);// Change
         recyclerView.setLayoutManager(gridLayoutManager);
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(Places.this);
+        AlertDialog.Builder builder = new AlertDialog.Builder(Hotel.this);// Change
         builder.setCancelable(false);
         builder.setView(R.layout.progress_layout);
         AlertDialog dialog = builder.create();
         dialog.show();
 
-        dataList = new ArrayList<>();
+        dataList = new ArrayList<HotelDataClass>();
 
-        adapter = new PlaceAdapter(Places.this, dataList);
+        adapter = new  HotelAdapter(Hotel.this, dataList);// Change  // Check variables in the line 31 and line 32
         recyclerView.setAdapter(adapter);
 
-        databaseReference = FirebaseDatabase.getInstance().getReference("Places");// database path
+        databaseReference = FirebaseDatabase.getInstance().getReference("Hotel_Details");// database path  // Change
         dialog.show();
         eventListener = databaseReference.addValueEventListener(new ValueEventListener() {
             @Override// for change data
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 dataList.clear();
                 for (DataSnapshot itemSnapshot: snapshot.getChildren()){
-                    PlaceDataClass dataClass = itemSnapshot.getValue(PlaceDataClass.class);
+                    HotelDataClass dataClass = itemSnapshot.getValue(HotelDataClass.class);// Change
                     dataClass.setKey(itemSnapshot.getKey());
                     dataList.add(dataClass);
                 }
@@ -81,7 +80,7 @@ public class Places extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Places.this, UploadActivity.class);
+                Intent intent = new Intent(Hotel.this,HotelUpload.class);// Change
                 startActivity(intent);
             }
         });
