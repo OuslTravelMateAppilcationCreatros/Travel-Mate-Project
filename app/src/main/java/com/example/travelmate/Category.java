@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 public class Category extends AppCompatActivity {
 
-    ImageView ShowMap, Places ;
+    ImageView ShowMap, Places, Guide ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class Category extends AppCompatActivity {
 
         ShowMap = findViewById(R.id.Direction);
         Places = findViewById(R.id.Places);
+        Guide = findViewById(R.id.Guide);
 
         ShowMap.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +32,13 @@ public class Category extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Category.this, Places.class);
+                startActivity(intent);
+            }
+        });
+        Guide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Category.this, Hire_Guide.class);
                 startActivity(intent);
             }
         });
