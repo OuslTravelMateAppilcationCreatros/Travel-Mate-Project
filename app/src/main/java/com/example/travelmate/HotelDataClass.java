@@ -1,23 +1,20 @@
 package com.example.travelmate;
 
-public class PlaceDataClass {
-  // This constructor and getters , setters create for places java class
+public class HotelDataClass {
     private String dataTitle;
     private String dataDesc;
     private String dataLang;
     private String dataImage;
     private String key;
 
-
-    public PlaceDataClass() {
+    public HotelDataClass() {
     }
 
-    public PlaceDataClass(String dataTitle, String dataDesc, String dataLang, String dataImage) {
+    public HotelDataClass(String dataTitle, String dataDesc, String dataLang, String dataImage) {
         this.dataTitle = dataTitle;
         this.dataDesc = dataDesc;
         this.dataLang = dataLang;
         this.dataImage = dataImage;
-
     }
 
     public String getDataTitle() {
