@@ -9,7 +9,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class DetailActivity extends AppCompatActivity {
+public class Hire_Guide_Details extends AppCompatActivity {
 
     TextView detailDesc, detailTitle, detailLang;
     ImageView detailImage;
@@ -17,15 +17,16 @@ public class DetailActivity extends AppCompatActivity {
     String key = "";
     String imageUrl = "";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail);
+        setContentView(R.layout.activity_hire_guide_details);
 
-        detailDesc = findViewById(R.id.detailDesc);
-        detailImage = findViewById(R.id.detailImage);
-        detailTitle = findViewById(R.id.detailTitle);
-        detailLang = findViewById(R.id.detailLang);
+        detailDesc = findViewById(R.id.Hire_Guide_detailDesc);// Change
+        detailImage = findViewById(R.id.Hire_Guide_detailImage);// Change
+        detailTitle = findViewById(R.id.Hire_Guide_detailTitle);// Change
+        detailLang = findViewById(R.id.detailLang);// Change
 
 
 
