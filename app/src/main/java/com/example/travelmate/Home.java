@@ -1,14 +1,23 @@
 package com.example.travelmate;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
+import com.denzcoskun.imageslider.models.SlideModel;
+import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -16,10 +25,13 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+
 public class Home extends AppCompatActivity {
     ImageView Go;
     TextView PF, SeeAll;
     TextView Name;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,9 +42,10 @@ public class Home extends AppCompatActivity {
         Name =findViewById(R.id.Name);
         SeeAll = findViewById(R.id.SeeAll);
 
+
         showUserData();
 
-
+        //When click see all move to Category page
         SeeAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,7 +54,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
-
+        //When click Profile then move to username check page
         Go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,6 +62,8 @@ public class Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //When click Profile then move to username check page
         PF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,8 +73,26 @@ public class Home extends AppCompatActivity {
 
 
         });
-    }
 
+
+        // auto image slider java code ,
+        ImageSlider imageSlider = findViewById(R.id.imageSlider);
+        ArrayList<SlideModel> slideModels = new ArrayList<>();
+
+        slideModels.add(new SlideModel(R.drawable.img1, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img2, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img3, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img4, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img5, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img6, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img7, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img8, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img9, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img10, ScaleTypes.FIT));
+
+        imageSlider.setImageList(slideModels,ScaleTypes.FIT);
+    }
+   //Show user data
     public void showUserData(){
 
         Intent intent = getIntent();
@@ -68,6 +101,8 @@ public class Home extends AppCompatActivity {
         Name.setText(nameUser);
 
     }
+
+    // pass user data and  display
     public void passUserData(){
         String userUsername = Name.getText().toString().trim();
 
@@ -100,8 +135,9 @@ public class Home extends AppCompatActivity {
 
             }
         });
-    }
 
+
+    }
 
 
 
