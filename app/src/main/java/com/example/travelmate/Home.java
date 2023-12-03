@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,9 +29,10 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class Home extends AppCompatActivity {
-    ImageView Go;
+    ImageView Go,Places,Hotel;
     TextView PF, SeeAll;
-    TextView Name;
+    TextView Name, PopularSeeAll;
+    Button Try;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +43,36 @@ public class Home extends AppCompatActivity {
         PF =findViewById(R.id.textVie1);
         Name =findViewById(R.id.Name);
         SeeAll = findViewById(R.id.SeeAll);
+        PopularSeeAll = findViewById(R.id.PopularSeeAll);
+        Places = findViewById(R.id.Places);
+        Hotel = findViewById(R.id.Hotel);
+        Try = findViewById(R.id.Try);
 
 
         showUserData();
+
+       Try.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this,Recommended_Item.class);
+                startActivity(intent);
+            }
+        });
+
+        Places.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this,Places.class);
+                startActivity(intent);
+            }
+        });
+        Hotel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this,Hotel.class);
+                startActivity(intent);
+            }
+        });
 
         //When click see all move to Category page
         SeeAll.setOnClickListener(new View.OnClickListener() {
@@ -72,6 +101,14 @@ public class Home extends AppCompatActivity {
             }
 
 
+        });
+
+        PopularSeeAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this,Places.class);
+                startActivity(intent);
+            }
         });
 
 

@@ -166,7 +166,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/editTextText19"
+                    android:id="@+id/PopularSeeAll"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="See all"
@@ -559,10 +559,51 @@
 
 
                 </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:background="#EDFBFB"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="400dp"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="24dp"
+                    android:hint="Recommended for you"
+                    android:textSize="15sp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
 
 
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/ellarock" />
+
+                    <Button
+                        android:id="@+id/Try"
+                        android:layout_width="180dp"
+                        android:layout_height="60dp"
+                        android:text="TRY NOW"
+                        android:textSize="24sp"
+                        android:backgroundTint="#63AB8D"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="320dp"/>
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
 
 
