@@ -283,15 +283,17 @@
                 </LinearLayout>
 
             </HorizontalScrollView>
-
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
                 android:background="#EDFBFB"
                 android:orientation="vertical"
-                android:padding="16dp">
-
+                android:padding="16dp"
+                tools:ignore="ExtraText">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -307,7 +309,10 @@
                         android:textStyle="bold" />
 
                 </LinearLayout>
+
+
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
