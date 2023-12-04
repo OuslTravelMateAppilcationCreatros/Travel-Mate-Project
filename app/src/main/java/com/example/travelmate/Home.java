@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,9 +29,11 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class Home extends AppCompatActivity {
-    ImageView Go;
-    TextView PF, SeeAll;
+    ImageView Go, place, Province, Hotele;
+    TextView PF, SeeAll,PopulorSeeall;
     TextView Name;
+
+    Button Try;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +44,54 @@ public class Home extends AppCompatActivity {
         PF =findViewById(R.id.textVie1);
         Name =findViewById(R.id.Name);
         SeeAll = findViewById(R.id.SeeAll);
+        Try = findViewById(R.id.Try);
+        PopulorSeeall = findViewById(R.id.PopularSeeAll);
+        place = findViewById(R.id.Places);
+        Province = findViewById(R.id.province);
+        Hotele = findViewById(R.id.Hotel);
 
 
         showUserData();
+
+        Hotele.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this,Hotel.class);
+                startActivity(intent);
+            }
+        });
+
+       Province.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this,Province_.class);
+                startActivity(intent);
+            }
+        });
+
+        place.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this,Places.class);
+                startActivity(intent);
+            }
+        });
+
+       PopulorSeeall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this,Places.class);
+                startActivity(intent);
+            }
+        });
+
+        Try.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this,Recommended_Item.class);
+                startActivity(intent);
+            }
+        });
 
         //When click see all move to Category page
         SeeAll.setOnClickListener(new View.OnClickListener() {

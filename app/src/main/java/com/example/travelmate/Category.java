@@ -25,7 +25,7 @@ public class Category extends AppCompatActivity {
         hotel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Category.this, Hotel.class);
+                Intent intent = new Intent(Category.this,Hotel.class);
                 startActivity(intent);
             }
         });
