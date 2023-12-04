@@ -32,7 +32,7 @@
         android:padding="20dp"
         android:text="District"
         android:layout_gravity="center"
-        android:id="@+id/detailLang"
+        android:id="@+id/HoteldetailLang"
         android:textSize="18sp"
         android:textColor="#63AB8D"/>
 

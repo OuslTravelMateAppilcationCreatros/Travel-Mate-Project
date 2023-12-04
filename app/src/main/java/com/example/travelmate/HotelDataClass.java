@@ -1,14 +1,12 @@
 package com.example.travelmate;
 
 public class HotelDataClass {
+
     private String dataTitle;
     private String dataDesc;
     private String dataLang;
     private String dataImage;
     private String key;
-
-    public HotelDataClass() {
-    }
 
     public HotelDataClass(String dataTitle, String dataDesc, String dataLang, String dataImage) {
         this.dataTitle = dataTitle;
@@ -55,5 +53,8 @@ public class HotelDataClass {
 
     public void setKey(String key) {
         this.key = key;
+    }
+
+    public HotelDataClass() {
     }
 }

@@ -29,7 +29,7 @@ public class Hotel extends AppCompatActivity {
     RecyclerView recyclerView;
 
     List<HotelDataClass> dataList;
-   HotelAdapter adapter;// Change
+    HotelAdapter adapter;// Change
     SearchView searchView;
 
     @Override
@@ -37,9 +37,8 @@ public class Hotel extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hotel);
 
-
-        recyclerView = findViewById(R.id.HotelrecyclerView);// Change
-        fab = findViewById(R.id.Hotel);// Change
+          recyclerView = findViewById(R.id.HotelrecyclerView);// Change
+          fab = findViewById(R.id.Hotel);// Change
         //  searchView = findViewById(R.id.search);
         //  searchView.clearFocus();
 
@@ -80,12 +79,9 @@ public class Hotel extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Hotel.this,HotelUpload.class);// Change
+                Intent intent = new Intent(Hotel.this,HotelUplad.class);// Change
                 startActivity(intent);
             }
         });
-
-
     }
-
 }

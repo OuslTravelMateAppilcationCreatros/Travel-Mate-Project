@@ -132,7 +132,7 @@
                     android:layout_height="104dp"
                     android:layout_gravity="center"
                     app:srcCompat="@drawable/hotel" />
-                />
+
 
                 <TextView
                     android:id="@+id/hotelText"

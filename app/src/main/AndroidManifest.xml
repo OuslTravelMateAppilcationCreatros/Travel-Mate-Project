@@ -17,6 +17,18 @@
         android:theme="@style/Theme.TRAVELMate"
         tools:targetApi="31">
         <activity
+            android:name=".Hotel_Details"
+            android:exported="false" />
+        <activity
+            android:name=".HotelUplad"
+            android:exported="false" />
+        <activity
+            android:name=".Hotel"
+            android:exported="false" />
+        <activity
+            android:name=".Recommended_Item"
+            android:exported="false" />
+        <activity
             android:name=".Southern_Province"
             android:exported="false" />
         <activity

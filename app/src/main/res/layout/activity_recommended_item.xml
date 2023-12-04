@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ellahikerock"
+    tools:context=".Recommended_Item">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="141dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginTop="300dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/img_9144_jpg" />
+
+
+                <Button
+                    android:id="@+id/Route"
+                    android:layout_width="210dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="320dp"
+                    android:backgroundTint="#63AB8D"
+                    android:text="START ROUTE"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                   android:textColor="@color/grey"
+                    android:text="Climb up to the sky and stand suspended  over the  white clouds enjoying the beauty of scenic Sri Lankan highlands.Regarded as the world's best walks, Ella Rock is a superb hiking spot in Ella with stunning views of magnificently vegetated hillsides. The trekking trial of Ella Rock is quite interesting with its challenging existence and unmatched scenery. Ella is a beautiful highland town in the south of Sri Lanka and is the proper destination If you are into the hillside beauty of the country. The train journey to Ella to Kandy is considered to be the best train experience in the world." />
+
+
+            </androidx.cardview.widget.CardView>
+          </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/ellacamlotinside" />
+
+
+                    <Button
+                        android:id="@+id/BookNow"
+                        android:layout_width="210dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="320dp"
+                        android:backgroundTint="#63AB8D"
+                        android:text="Book Now"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/Hoteltext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textSize="25sp"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:text=" Ella Camlot Hotel :-"
+                        />
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/HotelDESCtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:text="At the villa complex, every unit comes with a desk, a flat-screen TV, a private bathroom, bed linen and towels. A terrace with an outdoor dining area and mountain views is offered in all units. At the villa complex, units include a seating area."
+                        />
+
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
