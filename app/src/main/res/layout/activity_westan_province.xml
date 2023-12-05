@@ -153,8 +153,8 @@
                         android:padding="5dp"
                         android:textSize="17sp"
                         android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:text="The Western Province is one of the nine provinces of Sri Lanka,\nthe first level administrative division of the country.\nDistricts:Colombo,Gampaha,Kalutara\nArea: 3,684 km²\nCapital:Colombo" />
+                        android:textColor="#0C0C0C"
+                        android:text="The Western Province is one of the nine provinces of Sri Lanka,\nthe first level administrative division of the country.\n    Districts:Colombo,Gampaha,Kalutara\n    Area: 3,684 km²\n   Capital:Colombo" />
 
 
                 </androidx.cardview.widget.CardView>
