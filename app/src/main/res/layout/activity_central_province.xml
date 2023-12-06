@@ -110,7 +110,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleType="fitXY"
-                        app:srcCompat="@drawable/ambuluwaw" />
+                        app:srcCompat="@drawable/ambuluwawa" />
 
 
                     <Button
