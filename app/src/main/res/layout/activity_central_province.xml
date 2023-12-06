@@ -105,6 +105,7 @@
                     app:cardCornerRadius="20dp"
                     app:cardElevation="20dp">
 
+
                     <ImageView
                         android:id="@+id/imageView17"
                         android:layout_width="wrap_content"
@@ -112,9 +113,12 @@
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/ambuluwawa" />
 
-
                     <Button
+<<<<<<< Updated upstream
                         android:id="@+id/btn4"
+=======
+                        android:id="@+id/btn3"
+>>>>>>> Stashed changes
                         android:layout_width="210dp"
                         android:layout_height="50dp"
                         android:layout_marginStart="120dp"
