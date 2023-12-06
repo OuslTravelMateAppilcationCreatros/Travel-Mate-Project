@@ -292,8 +292,63 @@
                 android:layout_height="170dp"
                 android:background="#EDFBFB"
                 android:orientation="vertical"
+<<<<<<< Updated upstream
                 android:padding="16dp"
                 tools:ignore="ExtraText">
+=======
+                android:background="@drawable/gallerocksea"
+                android:padding="16dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/lighthousegalle" />
+
+
+                    <Button
+                        android:id="@+id/btn"
+                        android:layout_width="210dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="320dp"
+                        android:backgroundTint="#63AB8D"
+                        android:text="START ROUTE"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/galleclocktower" />
+
+
+>>>>>>> Stashed changes
 
                 <LinearLayout
                     android:layout_width="wrap_content"
