@@ -114,11 +114,7 @@
 
 
                     <Button
-<<<<<<< Updated upstream
-                        android:id="@+id/btn5"
-=======
                         android:id="@+id/btn6"
->>>>>>> Stashed changes
                         android:layout_width="210dp"
                         android:layout_height="50dp"
                         android:layout_marginStart="120dp"
